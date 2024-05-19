@@ -23,7 +23,7 @@ def course(request, item):
 
 def multiply_view(request, num1, num2):
     result = num1 * num2
-    return HttpResponse(f"{num1} * {num2} = {num1*num2}")
+    return HttpResponse(f"{num1} * {num2} = {result}")
 
 def course_number_view(request,number1):
     course_list = list(course_dic.keys())
